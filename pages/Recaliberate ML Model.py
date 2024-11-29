@@ -12,6 +12,7 @@ import pickle
 
 globalfile = ""
 def dumpmodel(uploaded_file):
+
     global globalfile
     globalfile= pd.read_csv(uploaded_file, sep=';')
     data = pd.get_dummies(globalfile, drop_first=True)
